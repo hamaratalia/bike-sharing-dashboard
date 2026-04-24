@@ -84,7 +84,7 @@ st.pyplot(fig)
 with st.expander("Lihat Penjelasan Grafik Tren Bulanan"):
     st.write("""
         Grafik di atas menunjukkan perbandingan performa penyewaan sepeda antara tahun 2011 dan 2012:
-        - **Pertumbuhan Tahunan:** Terjadi peningkatan jumlah penyewaan yang sangat signifikan di tahun 2012 (garis biru/merah sesuai palet) dibandingkan tahun 2011 hampir di setiap bulannya.
+        - **Pertumbuhan Tahunan:** Terjadi peningkatan jumlah penyewaan yang sangat signifikan di tahun 2012 (garis biru) dibandingkan tahun 2011 hampir di setiap bulannya.
         - **Pola Musiman:** Kedua tahun menunjukkan pola yang serupa, di mana penyewaan cenderung rendah di awal tahun (Januari-Februari), kemudian meningkat pesat dan mencapai puncaknya pada pertengahan tahun hingga kuartal ketiga (bulan Juni hingga September).
         - **Penurunan Akhir Tahun:** Jumlah penyewaan kembali menurun saat memasuki akhir tahun (November-Desember), yang kemungkinan dipengaruhi oleh faktor cuaca atau musim dingin.
     """)
