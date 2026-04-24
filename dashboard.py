@@ -81,7 +81,7 @@ ax.set_ylabel("Total Penyewaan")
 ax.set_title("Perbandingan Penyewaan Sepeda Tahun 2011 & 2012")
 st.pyplot(fig)
 # Penjelasan Tren Bulanan dengan Expander
-with st.expander("Lihat Penjelasan Grafik Tren Bulanan"):
+with st.expander("Penjelasan Grafik Tren Bulanan"):
     st.write("""
         Grafik di atas menunjukkan perbandingan performa penyewaan sepeda antara tahun 2011 dan 2012:
         - **Pertumbuhan Tahunan:** Terjadi peningkatan jumlah penyewaan yang sangat signifikan di tahun 2012 (garis biru) dibandingkan tahun 2011 hampir di setiap bulannya.
@@ -114,7 +114,7 @@ ax.grid(True, linestyle='--', alpha=0.6)
 st.pyplot(fig)
 
 # Penjelasan dengan Expander
-with st.expander("Lihat Penjelasan Grafik Pola Jam"):
+with st.expander("Penjelasan Grafik Pola Jam"):
     st.write("""
         Berdasarkan grafik di atas, kita dapat melihat perbedaan perilaku penyewa sepeda:
         - **Hari Kerja (Garis Hijau/1):** Penyewaan memuncak tajam pada jam berangkat kerja/sekolah (08:00) dan jam pulang (17:00).
