@@ -80,7 +80,15 @@ ax.set_xlabel("Bulan")
 ax.set_ylabel("Total Penyewaan")
 ax.set_title("Perbandingan Penyewaan Sepeda Tahun 2011 & 2012")
 st.pyplot(fig)
-
+# Penjelasan Tren Bulanan dengan Expander
+with st.expander("Lihat Penjelasan Grafik Tren Bulanan"):
+    st.write("""
+        Grafik di atas menunjukkan perbandingan performa penyewaan sepeda antara tahun 2011 dan 2012:
+        - **Pertumbuhan Tahunan:** Terjadi peningkatan jumlah penyewaan yang sangat signifikan di tahun 2012 (garis biru/merah sesuai palet) dibandingkan tahun 2011 hampir di setiap bulannya.
+        - **Pola Musiman:** Kedua tahun menunjukkan pola yang serupa, di mana penyewaan cenderung rendah di awal tahun (Januari-Februari), kemudian meningkat pesat dan mencapai puncaknya pada pertengahan tahun hingga kuartal ketiga (bulan Juni hingga September).
+        - **Penurunan Akhir Tahun:** Jumlah penyewaan kembali menurun saat memasuki akhir tahun (November-Desember), yang kemungkinan dipengaruhi oleh faktor cuaca atau musim dingin.
+    """)
+    
 st.divider() # Garis pemisah
 
 # --- Visualisasi 2: Grafik Jam Puncak ---
@@ -109,8 +117,8 @@ st.pyplot(fig)
 with st.expander("Lihat Penjelasan Grafik Pola Jam"):
     st.write("""
         Berdasarkan grafik di atas, kita dapat melihat perbedaan perilaku penyewa sepeda:
-        - **Hari Kerja (Garis Kuning/1):** Penyewaan memuncak tajam pada jam berangkat kerja/sekolah (08:00) dan jam pulang (17:00).
-        - **Hari Libur (Garis Ungu/0):** Pola penyewaan membentuk kurva lonceng, di mana penyewaan perlahan naik sejak pagi dan mencapai puncaknya pada siang hingga sore hari (12:00 - 15:00) untuk rekreasi.
+        - **Hari Kerja (Garis Hijau/1):** Penyewaan memuncak tajam pada jam berangkat kerja/sekolah (08:00) dan jam pulang (17:00).
+        - **Hari Libur (Garis Biru/0):** Pola penyewaan membentuk kurva lonceng, di mana penyewaan perlahan naik sejak pagi dan mencapai puncaknya pada siang hingga sore hari (12:00 - 15:00) untuk rekreasi.
     """)
 
 st.caption("Copyright © Hamara Talia - Dicoding Data Analysis Project 2026")
